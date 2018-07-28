@@ -1,0 +1,65 @@
+section {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.bannerHeader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.bannerVidWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/* set this later so that when the screen maxes out to a certain width it changes a bit */
+.bannerVidWrap video {
+  min-width: 325%;
+  min-height: 100%;
+  filter: blur(2px);
+  
+}
+
+.bannerOvr {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, #800b70, rgb(221, 31, 142)) !important;
+  ;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+/*Video Banner Content Here*/
+
+.bannerContent {
+  text-align: center;
+  z-index: 3;
+}
+
+.bannerContent a {
+  border-radius: 30px;
+}
+
+.bannerContent img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: -7vh 0 0 -125px;
+  height: auto;
+  width: 250px;
+  z-index: 0;
+  opacity: 0.25;
+}

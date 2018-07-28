@@ -1,0 +1,32 @@
+.keepHilite {
+  color: #a2127b;
+}
+
+.fa-heart {
+  color: #a2127b;
+}
+
+.heroColor {
+  background: linear-gradient(to bottom right, #800b70, rgb(221, 31, 142)) !important;
+}
+
+
+/* premade selector spacings */
+
+
+
+/* pre made selector spacings  */
+.vision-img img {
+  height: 250px;
+  width: auto;
+  border-radius: 100%; 
+  box-shadow: 0 2px 8px black;
+  border: 7px solid white;
+}
+
+.visImg1 img {
+
+}
+.visImg2 img {
+
+}
