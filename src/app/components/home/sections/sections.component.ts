@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
 
 import {
-faCalendarAlt,
-faHeart,
-faGlobeAfrica,
-faHandsHelping,
-faBullhorn,
-faEnvelope,
-faNewspaper
+  faCalendarAlt,
+  faHeart,
+  faGlobeAfrica,
+  faHandsHelping,
+  faBullhorn,
+  faEnvelope,
+  faNewspaper
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-sections',
+  templateUrl: './sections.component.html',
+  styleUrls: ['./sections.component.css']
 })
 
-export class AppComponent {
-  title = 'app';
+export class SectionsComponent {
+  title = '';
 
   // Font awesome stuff right here
 

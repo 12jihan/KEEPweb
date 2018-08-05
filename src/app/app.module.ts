@@ -1,25 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { CoverComponent } from './components/home/cover/cover.component';
+import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { AppRoutingModule } from './routers/app-routing/app-routing.module';
+import { CoverComponent } from './components/home/cover/cover.component';
+import { SectionsComponent } from './components/home/sections/sections.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     CoverComponent,
-    NavbarComponent
+    SectionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
