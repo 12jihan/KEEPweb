@@ -22,9 +22,9 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore';
 
-=======
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FontawesomeService } from './fontawesome.service';
+=======
 >>>>>>> dev
 
 
