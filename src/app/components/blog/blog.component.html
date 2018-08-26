@@ -1,0 +1,28 @@
+<div class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        KEEP BLOG
+      </h1>
+      <hr class="hr">
+      <h2 class="subtitle">
+        Stay Up-to-date on What's Going on!
+      </h2>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="container">
+    <div *ngFor="let blog of blogs | async">
+      <h3>{{ blog.title }}</h3>
+      <h3>
+        written and curated by <strong>{{ blog.author }}</strong>
+      </h3>
+      <h3> {{ blog.date.seconds * 1000 | date: 'longDate' }}</h3>
+      <p>
+        {{ blog.body }}
+      </p>
+    </div>
+  </div>
+</div>

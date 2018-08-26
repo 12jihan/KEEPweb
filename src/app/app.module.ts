@@ -1,7 +1,9 @@
+// This is for all the Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './routes/app.routing';
 
+// This is for all the Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoverComponent } from './components/home/cover/cover.component';
@@ -10,14 +12,17 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AboutComponent } from './components/about/about.component';
 import { DonateComponent } from './components/donate/donate.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { BlogComponent } from './components/blog/blog.component';
 
-export const firebaseConfig = environment.firebaseConfig;
-
-import { environment } from '../environments/environment';
-
+// This stuff is all for Font Awesome stuff
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FontawesomeService } from './fontawesome.service';
 
+// This is all for Angular Firestore
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
+export const firebaseConfig = environment.firebaseConfig;
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 @NgModule({
   declarations: [
@@ -28,12 +33,15 @@ import { FontawesomeService } from './fontawesome.service';
     PageNotFoundComponent,
     AboutComponent,
     DonateComponent,
-    ContactComponent
+    ContactComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [
     FontawesomeService
