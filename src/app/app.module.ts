@@ -10,7 +10,6 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AboutComponent } from './components/about/about.component';
 import { DonateComponent } from './components/donate/donate.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { BlogComponent } from './components/blog/blog.component';
 
 export const firebaseConfig = environment.firebaseConfig;
 
@@ -29,8 +28,7 @@ import { FontawesomeService } from './fontawesome.service';
     PageNotFoundComponent,
     AboutComponent,
     DonateComponent,
-    ContactComponent,
-    BlogComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
