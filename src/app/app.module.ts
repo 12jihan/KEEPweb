@@ -1,9 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
-import { FontAwesomeModule } from '@fortawesome/fontawesome-svg-core';
-=======
->>>>>>> dev
 import { AppRoutingModule } from './routes/app.routing';
 
 import { AppComponent } from './app.component';
@@ -16,16 +12,12 @@ import { DonateComponent } from './components/donate/donate.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BlogComponent } from './components/blog/blog.component';
 
-<<<<<<< HEAD
 export const firebaseConfig = environment.firebaseConfig;
+
 import { environment } from '../environments/environment';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FontawesomeService } from './fontawesome.service';
-=======
->>>>>>> dev
 
 
 @NgModule({
@@ -44,8 +36,6 @@ import { FontawesomeService } from './fontawesome.service';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestore
   ],
   providers: [
     FontawesomeService
